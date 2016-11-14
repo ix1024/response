@@ -1,6 +1,6 @@
 {
   "name": "res-format",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "response format",
   "main": "index.js",
   "scripts": {
@@ -15,6 +15,7 @@
   ],
   "author": "kingwell",
   "license": "ISC",
+  "homepage": "https://github.com/lengjh/response#readme",
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/lengjh/response/issues"

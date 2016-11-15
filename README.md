@@ -1,5 +1,7 @@
 # response format
 
+[![npm version](https://badge.fury.io/js/res-format.svg)](http://badge.fury.io/js/res-format)
+
 ### install
 >$ npm install --save ansi-regex
 

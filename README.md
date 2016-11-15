@@ -1,51 +1,45 @@
 # response format
+[![npm version](https://badge.fury.io/js/res-format.svg)](http://badge.fury.io/js/res-format)[![npm version](https://badge.fury.io/js/res-format.svg)](http://badge.fury.io/js/res-format)[![npm version](https://badge.fury.io/js/res-format.svg)](http://badge.fury.io/js/res-format)
 
+### install
+>$ npm install --save ansi-regex
 
-    {
-        "code": "00000",
-        "data": [],
-        "message": "success",
-        "time": 1479123564170
-    }
+### Usage
+>var  var response = new Response();
 
-    {
-        "code": "10010",
-        "data": [],
-        "message": "create failed",
-        "time": 1479123614465
-    }
+>response.format({code:'00000',message:'something',data:[]});
 
-    {
-        "code": "10020",
-        "data": [],
-        "message": "insert  failed",
-        "time": 1479123605769
-    }
+    {"code":"00000","data":[],"status":"success","message":"something","time":1479172147579}
 
-    {
-        "code": "10030",
-        "data": [],
-        "message": "update  failed",
-        "time": 1479123627211
-    }
+>response.format({code:'10010',message:'something',data:[]});
 
-    {
-        "code": "10040",
-        "data": [],
-        "message": "search  failed",
-        "time": 1479123635849
-    }
+    {"code":"10010","data":[],"status":"create failed","message":"something","time":1479172188430}
 
-    {
-        "code": "10050",
-        "data": [],
-        "message": "delete  failed",
-        "time": 1479123642674
-    }
+>response.format({code:'10020',message:'something',data:[]});
 
-    {
-        "code": "99999",
-        "data": [],
-        "message": "unknown mistake",
-        "time": 1479123657816
-    }
+    {"code":"10020","data":[],"status":"insert  failed","message":"something","time":1479172199972}
+        
+>response.format({code:'10030',message:'something',data:[]});
+
+    {"code":"10030","data":[],"status":"update  failed","message":"something","time":1479172385525}
+    
+>response.format({code:'10040',message:'something',data:[]});
+
+    {"code":"10040","data":[],"status":"update  failed","message":"something","time":1479172385525}
+
+>response.format({code:'10050',message:'something',data:[]});
+
+    {"code":"10050","data":[],"status":"update  failed","message":"something","time":1479172385525}
+    
+
+>response.format({code:'99999',message:'something',data:[]});
+
+    {"code":"99999","data":[],"status":"update  failed","message":"something","time":1479172385525}
+
+### setting
+
+>response.setCode('00000','ok');
+
+>response.format({code:'00000',message:'something',data:[]});
+
+    {"code":"00000","data":[],"status":"ok","message":"something","time":1479172676144}

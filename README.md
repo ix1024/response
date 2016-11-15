@@ -4,7 +4,9 @@
 
 ### install
 >$ npm install --save res-format
+
 ### Usage
+
 >var  var response = new Response();
 >
 >response.format({code:'00000',message:'something',data:[]});
